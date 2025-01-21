@@ -103,6 +103,7 @@ public class ModuleOne {
     } // end main
 }
 
+// Calculator class
 class Calculator {
     public int add(int a, int b) {
         try {
