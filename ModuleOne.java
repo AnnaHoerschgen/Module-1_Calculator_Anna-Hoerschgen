@@ -5,10 +5,29 @@
  * Assignment: Module 1 - Calculator
 */
 
+// Imports
+import java.util.Scanner;
+
 public class ModuleOne {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-    }
+        // instantiate reusable objects
+        Calculator calculator = new Calculator(); // Calculator
+        Scanner scanner = new Scanner(System.in); // Input Scanner
+        String yesNo; // Yes/No variable, controls the loop
+
+        // start loop
+        do {
+            System.out.println("Enter an operation: ");
+            String operation = scanner.nextLine();
+
+            System.out.println("Enter the first number: ");
+            int a = scanner.nextInt();
+            System.out.println("Enter the second number: ");
+            int b = scanner.nextInt();
+
+            // continue
+        } while (yesNo.toLowerCase() == "yes");
+    } // end main
 }
 
 class Calculator {
@@ -47,4 +66,4 @@ class Calculator {
             return 0;
         }
     }
-}
+} // end class
