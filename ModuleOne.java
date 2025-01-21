@@ -1,12 +1,50 @@
 /*
  * Name: Anna Hoerschgen
- * Date: January 16th, 2025
- * Filename: Main.java
+ * Date: January 21, 2025
+ * Filename: ModuleOne.java
  * Assignment: Module 1 - Calculator
 */
 
 public class ModuleOne {
     public static void main(String[] args) {
-        System.out.println("");
+        Calculator calculator = new Calculator();
+    }
+}
+
+class Calculator {
+    public int add(int a, int b) {
+        try {
+            return (a + b);
+        } catch (ArithmeticException e) {
+            System.out.println("Error - Arithmetic Exception - " + e.getMessage());
+            return 0;
+        }
+    }
+
+    public int subtract(int a, int b) {
+        try {
+            return (a - b);
+        } catch (ArithmeticException e) {
+            System.out.println("Error - Arithmetic Exception - " + e.getMessage());
+            return 0;
+        }
+    }
+
+    public int multiply(int a, int b) {
+        try {
+            return (a * b);
+        } catch (ArithmeticException e) {
+            System.out.println("Error - Arithmetic Exception - " + e.getMessage());
+            return 0;
+        }
+    }
+
+    public double divide(int a, int b) {
+        try {
+            return (a / b);
+        } catch (ArithmeticException e) {
+            System.out.println("Error - Arithmetic Exception - " + e.getMessage());
+            return 0;
+        }
     }
 }
