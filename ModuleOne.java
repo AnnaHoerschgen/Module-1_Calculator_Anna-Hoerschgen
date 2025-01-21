@@ -23,7 +23,7 @@ public class ModuleOne {
         // start loop
         do {
             // user selects an operation
-            System.out.println("Enter an operation: Addition, Subtraction, Multiplication, Division\n\t");
+            System.out.println("Enter an operation: Addition, Subtraction, Multiplication, or Division.\n\t");
             operation = scanner.nextLine();
 
             // user chooses integers
